@@ -23,3 +23,18 @@
 ```bat
 javac -encoding UTF-8 -d . taprun\core\*.java taprun\modes\*.java taprun\Main.java
 java taprun.Main
+
+[![Java 11](https://img.shields.io/badge/Java-11-blue)]() [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
+## Demo
+![Tap Run Demo](assets/demo.gif) // 곧 추가 예정
+
+## 내 역할 & 핵심 기여
+- **치트 방지(Quiet Gap)**: 연속 입력 최소 간격으로 홀드/오토 입력 차단
+- **정확한 타이머**: `System.nanoTime()` 기반 측정
+- **랭킹 시스템**: 텍스트 파일 저장, **같은 이름은 더 좋은 기록만 갱신**, VsAI는 난이도 그룹 정렬
+- **UX 디테일**: 선/후공 주사위, 시작 키(1/2)로 자동 시작 방지, 진행바/HP바 출력
+- **예외/파싱 안정성**: 잘못된 입력 방어 및 랭킹 파일 파싱 오류 스킵
+
+## 개선 계획 (Roadmap)
+- [ ] 3-2-1 카운트다운 스타트
